@@ -1,2 +1,65 @@
 @import 'reset.scss';
 
+body {
+    font-family: "Roboto";
+}
+
+.container {
+    width: 95%;
+    max-width: 400px;
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    background-color: #038405;
+    padding: 50px 15px;
+
+    img {
+        max-width: 40px;
+    }
+
+    .header__text {
+
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-right: 40px;
+        color: white;
+        font-size: 18px;
+
+
+        span {
+            padding-left: 8px;
+            font-weight: 600;
+        }
+    }
+}
+
+.hotkeys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 12px;
+    position: absolute;
+    top: 107px;
+    z-index: 100;
+    padding: 15px;
+
+
+    .hotkeys__item {
+        display: flex;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 10px 15px;
+        box-shadow: rgb(173, 173, 173) 0px 2px 5px 0px;
+
+        i {
+            color: #038405;
+            padding-right: 14px;
+        }
+        .hotkeys__text {
+            font-weight: 800;
+        }
+    }
+}
