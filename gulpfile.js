@@ -21,7 +21,7 @@ const html = () => {
   return gulp
     .src('./src/**/*.html')
     .pipe(gulpIf(isProduction(), htmlmin({ collapseWhitespace: true })))
-    .pipe(gulp.dest('./docs'))
+    .pipe(gulp.dest('./dist'))
     .pipe(browserSync.reload({ stream: true }));
 };
 
@@ -30,7 +30,7 @@ const pug = () => {
     .src('./src/**/*.pug')
     .pipe(GulpPug({ pretty: true }))
     .pipe(gulpIf(isProduction(), htmlmin({ collapseWhitespace: true })))
-    .pipe(gulp.dest('./docs'))
+    .pipe(gulp.dest('./dist'))
     .pipe(browserSync.reload({ stream: true }));
 };
 
@@ -38,7 +38,7 @@ const scss = () => {
   return gulp
     .src('./src/scss/index.scss')
     .pipe(sass({ outputStyle: isProduction() ? 'compressed' : 'expanded' }).on('error', sass.logError))
-    .pipe(gulp.dest('./docs/css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.reload({ stream: true }));
 };
 
@@ -46,26 +46,26 @@ const js = () => {
   return gulp
     .src('./src/js/**/*.js')
     .pipe(gulpIf(isProduction(), uglify()))
-    .pipe(gulp.dest('./docs/js'))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.reload({ stream: true }));
 };
 
 const assets = () => {
   return gulp
     .src('./src/assets/**/*')
-    .pipe(gulp.dest('./docs/assets'))
+    .pipe(gulp.dest('./dist/assets'))
     .pipe(browserSync.reload({ stream: true }));
 };
 
 const clean = () => {
-  return deleteAsync(['./docs']);
+  return deleteAsync(['./dist']);
 };
 
 const autoreload = () => {
   browserSync.init({
     open: false,
     server: {
-      baseDir: './docs',
+      baseDir: './dist',
     },
   });
 };
