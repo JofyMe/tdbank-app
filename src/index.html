@@ -15,22 +15,39 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
-  <!--ICONS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-  <header class="header container">
-    <img src="assets/images/header.png" alt="" class="header__img">
-    <p class="header__text">Good evening, <span>Valeria</span>
+  <header class="header ">
+    <div class="header__container">
+      <img src="assets/images/header.png" alt="" class="header__img">
+      <p class="header__text">Good evening, <span>Valeria</span>
+    </div>
     </p>
   </header>
 
   <main>
+    <div class="menu">
+      <div class="menu__list">
+        <div class="menu__item">
+          <i class="fa-solid fa-wallet"></i>
+          <h3 class="menu__text">Accounts</h3>
+        </div>
+        <div class="menu__item">
+          <i class="fa-solid fa-money-bill-transfer"></i>
+          <h3 class="menu__text">Transfer</h3>
+        </div>
+        <div class="menu__item">
+          <i class="fa-solid fa-bars"></i>
+          <h3 class="menu__text">Menu</h3>
+        </div>
+      </div>
+    </div>
+
     <div class="hotkeys container">
       <div class="hotkeys__item">
-        <i class="fa fa-camera" aria-hidden="true"></i>
+        <i class="fa-solid fa-wallet"></i>
         <p class="hotkeys__text">Deposit</p>
       </div>
       <div class="hotkeys__item">
@@ -54,47 +71,94 @@
         </div>
       </div>
       <div class="accounts__list">
-        <div class="accounts__item">
-          <div class="accounts__text">
-            <h3>Banking</h3>
-            <p>2 accounts</p>
+        <a href="">
+          <div class="accounts__item border">
+            <div class="accounts__text">
+              <h3>Banking</h3>
+              <p>2 accounts</p>
+            </div>
+            <div class="accounts__price">
+              <h3 class="">
+                $14,000.00
+              </h3>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
           </div>
-          <div class="accounts__price">
-            <h3 class="">
-              $14,000.00
-            </h3>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <div class="accounts__item border">
+            <div class="accounts__text">
+              <h3>TD CONVENIENCE CHECKING </h3>
+              <p>x3458</p>
+            </div>
+            <div class="accounts__price">
+              <h3 class="">
+                $0.53
+              </h3>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
           </div>
-        </div>
-        <div class="accounts__item">
-          <div class="accounts__text">
-            <h3>Banking</h3>
-            <p>2 accounts</p>
+        </a>
+        <a href="">
+          <div class="accounts__item border">
+            <div class="accounts__text">
+              <h3>RD SIMPLE SAVINGS </h3>
+              <p>x4745</p>
+            </div>
+            <div class="accounts__price">
+              <h3 class="">
+                $0.08
+              </h3>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
           </div>
-          <div class="accounts__price">
-            <h3 class="">
-              $14,000.00
-            </h3>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+
+        <a href="account.html">
+          <div class="accounts__item">
+            <div class="accounts__text">
+              <h3>PROMO 6 MO STMT CD </h3>
+              <p>x4352</p>
+            </div>
+            <div class="accounts__price">
+              <h3 class="">
+                $20,000.00
+              </h3>
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
           </div>
-        </div>
-        <div class="accounts__item">
-          <div class="accounts__text">
-            <h3>Banking</h3>
-            <p>2 accounts</p>
-          </div>
-          <div class="accounts__price">
-            <h3 class="">
-              $14000.00
-            </h3>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </div>
-        </div>
+        </a>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="offers container">
+      <div class="offers__title">
+        <h3>Just for you</h3>
+        <div class="line"></div>
+      </div>
+      <div class="offers__body">
+        <img src="assets/img/offers__img.png" alt="">
+      </div>
+    </div>
+
+    <div class="footer container">
+      <div class="footer__body">
+        <img src="assets/img/footer__img.png" alt="">
       </div>
     </div>
 
   </main>
-  <script src="/js/index.js"></script>
+  <script src="./js/index.js"></script>
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/d80653dcba.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
