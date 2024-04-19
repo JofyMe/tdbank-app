@@ -2,6 +2,10 @@ main {
     background-color: #F3F3F3;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     font-family: "Roboto";
 }
@@ -52,7 +56,7 @@ header {
         .header__metod {
             display: flex;
             justify-content: space-between;
-            max-width: 200px;
+            max-width: 180px;
             margin: 0 auto;
             margin-top: 30px;
 
@@ -87,6 +91,20 @@ header {
                 font-size: 24px;
                 padding: 5px;
             }
+        }
+    }
+}
+
+.button {
+    .button__container {
+        display: flex;
+        button {
+            width: 50%;
+            padding: 20px;
+            border: 1px solid #C5C4C9;
+        }
+        button.hidden {
+            color: #027202;
         }
     }
 }
