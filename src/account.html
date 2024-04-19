@@ -61,12 +61,33 @@
 
         <div class="button">
             <div class="button__container">
-                <button onclick="showActivity()">Show Activity</button>
-                <button onclick="showDetails()">Show Details</button>
+                <button class="mainButton active" onclick="showActivity()">Show Activity</button>
+                <button class="mainButton" onclick="showDetails()">Show Details</button>
             </div>
 
-            <div id="activity" class="container">
-                <p>This is the Activity block.</p>
+            <div id="activity" class="button__active">
+                <h4 class="container">PENDING</h4>
+                <div class="deposit__list">
+                    <div class="deposit__item container">
+                        <div class="deposit__text">
+                            <h5></h5>
+                        </div>
+
+                        <div class="deposit__price">
+                            <h5>$0.00</h5>
+                        </div>
+                    </div>
+                    <div class="deposit__item container">
+                        <div class="deposit__text">
+                            <h5>DEPOSIT</h5>
+                        </div>
+
+                        <div class="deposit__price">
+                            <h5>$20,000.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="container">That’s everything! All available activity has been retrieved.</h4>
             </div>
 
             <div id="details" class="hidden container">

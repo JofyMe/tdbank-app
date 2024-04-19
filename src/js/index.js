@@ -13,3 +13,14 @@ function showDetails() {
     activityBlock.classList.add('hidden');
     detailsBlock.classList.remove('hidden');
 }
+
+const buttons = document.querySelectorAll('.mainButton');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});

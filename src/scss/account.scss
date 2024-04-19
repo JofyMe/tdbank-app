@@ -1,5 +1,5 @@
 main {
-    background-color: #F3F3F3;
+    background-color: #7B7B7D;
 }
 
 .hidden {
@@ -96,15 +96,52 @@ header {
 }
 
 .button {
+    padding-bottom: 65%;
     .button__container {
         display: flex;
-        button {
+        .mainButton {
             width: 50%;
             padding: 20px;
             border: 1px solid #C5C4C9;
+            background-color: #F1F0F6;
+            font-size: 16px;
+            font-weight: 500;
         }
-        button.hidden {
+        .mainButton.active {
             color: #027202;
+            background-color: #fff;
+        }
+    }
+    .button__active {
+        h4 {
+            color: #7B7B7D;
+            padding: 12px;
+            font-size: 14px;
+        }
+        .deposit__list {
+            background-color: #FEF8D8;
+            border: 1px solid #DBDBD3;
+            
+            .deposit__item {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 0;
+                &:first-child {
+                    border-bottom: 2px solid #EDE7C7;
+                }
+                
+                .deposit__text{
+                    h5 {
+                        font-size: 16px;
+                    }
+                }
+                .deposit__price {
+                    h5 {
+                        font-size: 16px;
+                        color: #027202;
+                    }
+                }
+            }
         }
     }
 }
