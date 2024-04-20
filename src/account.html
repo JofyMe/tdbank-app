@@ -61,8 +61,8 @@
 
         <div class="button">
             <div class="button__container">
-                <button class="mainButton active" onclick="showActivity()">Show Activity</button>
-                <button class="mainButton" onclick="showDetails()">Show Details</button>
+                <button class="mainButton active" onclick="showActivity()">Activity</button>
+                <button class="mainButton" onclick="showDetails()">Details</button>
             </div>
 
             <div id="activity" class="button__active">
@@ -90,8 +90,30 @@
                 <h4 class="container">That’s everything! All available activity has been retrieved.</h4>
             </div>
 
-            <div id="details" class="hidden container">
-                <p>This is the Details block.</p>
+            <div id="details" class="button__details hidden">
+                <div class="details__list">
+                    <div class="details__item">
+                        <div class="details__name">Account name</div>
+                        <div class="details__info">PROMO 6 MO STMT CD</div>
+                    </div>
+                    <div class="details__item">
+                        <div class="details__name">Account number</div>
+                        <div class="details__info">x4352<span style="color: #027202;">Show</span></div></div>
+                    <div class="details__item">
+                        <div class="details__name">Routing number</div>
+                        <div class="details__info">0260-13673</div>
+                    </div>
+                </div>
+                <div class="details__list">
+                    <div class="details__item">
+                        <div class="details__name">Fedwire ABA for Wires</div>
+                        <div class="details__info">031101266</div>
+                    </div>
+                    <div class="details__item">
+                        <div class="details__name">SWIFT</div>
+                        <div class="details__info">NRTHUS33XXX</div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
