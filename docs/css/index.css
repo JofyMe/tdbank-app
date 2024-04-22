@@ -133,8 +133,8 @@ table {
   border-spacing: 0;
 }
 
-main {
-  background-color: #F3F3F3;
+.hidden {
+  display: none;
 }
 
 body {
@@ -147,8 +147,45 @@ body {
 }
 
 header {
-  background-color: #038405;
+  background-color: #027202;
   padding: 50px 15px;
+  color: #e4e4e4;
+}
+header .header__text {
+  text-align: center;
+}
+header .header__text h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+header .header__text h4 {
+  margin-top: 22px;
+  font-size: 14px;
+  font-weight: 300;
+}
+header .header__text h1 {
+  margin-top: 14px;
+  font-size: 34px;
+  font-weight: 400;
+}
+header .header__text h2 {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 300;
+}
+header .header__text .header__today {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__text .header__metod {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+header .header__text .header__metod .header__item img {
+  width: 80%;
 }
 
 .menu {
@@ -174,8 +211,61 @@ header {
   padding: 5px;
 }
 
+.button {
+  padding-bottom: 50%;
+}
+.button .button__container {
+  display: flex;
+}
+.button .button__container .mainButton {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #C5C4C9;
+  background-color: #F1F0F6;
+  font-size: 16px;
+  font-weight: 500;
+}
+.button .button__container .mainButton.active {
+  color: #027202;
+  background-color: #fff;
+}
+.button .button__active h4 {
+  color: #7B7B7D;
+  padding: 12px;
+  font-size: 14px;
+}
+.button .button__active .deposit__list {
+  background-color: #FFF;
+  border: 1px solid #DBDBD3;
+}
+.button .button__active .deposit__list .deposit__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.button .button__active .deposit__list .deposit__item .deposit__text h5 {
+  font-size: 16px;
+}
+.button .button__active .deposit__list .deposit__item .deposit__price h5 {
+  font-size: 16px;
+  color: #027202;
+}
+.button .button__details .details__list {
+  margin-top: 15px;
+  background-color: white;
+  border: 1px solid #DBDBD3;
+}
+.button .button__details .details__list .details__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+.button .button__details .details__list .details__item span {
+  padding-left: 5px;
+}
+
 main {
-  background-color: #F3F3F3;
+  background-color: #F1F0F6;
 }
 
 body {

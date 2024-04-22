@@ -1,6 +1,4 @@
-main {
-    background-color: #7B7B7D;
-}
+
 
 .hidden {
     display: none;
@@ -124,17 +122,13 @@ header {
         }
 
         .deposit__list {
-            background-color: #FEF8D8;
+            background-color: #FFF;
             border: 1px solid #DBDBD3;
 
             .deposit__item {
                 display: flex;
                 justify-content: space-between;
                 padding: 15px 0;
-
-                &:first-child {
-                    border-bottom: 2px solid #EDE7C7;
-                }
 
                 .deposit__text {
                     h5 {
@@ -156,6 +150,8 @@ header {
         .details__list {
             margin-top: 15px;
             background-color: white;
+            border: 1px solid #DBDBD3;
+
             .details__item {
                 display: flex;
                 justify-content: space-between;
