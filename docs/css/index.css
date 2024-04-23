@@ -154,9 +154,19 @@ header {
 header .header__text {
   text-align: center;
 }
+header .header__text .header__group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+}
+header .header__text .header__group a {
+  color: white;
+}
 header .header__text h3 {
   font-size: 18px;
   font-weight: 500;
+  margin: 0 auto;
 }
 header .header__text h4 {
   margin-top: 22px;
@@ -246,7 +256,12 @@ header .header__text .header__metod .header__item img {
 .button .button__active .deposit__list .deposit__item .deposit__text h5 {
   font-size: 16px;
 }
+.button .button__active .deposit__list .deposit__item .deposit__price {
+  display: flex;
+}
 .button .button__active .deposit__list .deposit__item .deposit__price h5 {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   color: #027202;
 }
@@ -259,6 +274,9 @@ header .header__text .header__metod .header__item img {
   display: flex;
   justify-content: space-between;
   padding: 20px 15px;
+}
+.button .button__details .details__list .details__item .deposit__info {
+  color: brown;
 }
 .button .button__details .details__list .details__item span {
   padding-left: 5px;
@@ -296,7 +314,6 @@ body {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  padding-right: 40px;
   color: white;
   font-size: 18px;
 }
@@ -347,7 +364,7 @@ body {
 }
 .hotkeys .hotkeys__item i {
   color: #038405;
-  padding-right: 14px;
+  padding-right: 10px;
 }
 .hotkeys .hotkeys__item .hotkeys__text {
   font-weight: 800;
