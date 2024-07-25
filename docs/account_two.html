@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Html Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header__text">
+            
+            <div class="header__group">
+                <a href="index.html">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+                
+                <h3>Bank Account</h3>
+            </div>
+            <h4>AVAILABLE BALANCE</h4>
+            <h1>$40,000.00</h2>
+                <h2>PROMO 6 MO STMT CD x5892</h2>
+                <div class="header__today">
+                    <h4>TODAY'S BEGINNING BALANCE</h4>
+                    <h4>$40,000.00</h4>
+                </div>
+                <div class="header__metod">
+                    <div class="header__item">
+                        <img src="assets/images/zelle.png" alt="">
+                        <h4>ZELLE</h4>
+                    </div>
+                    <div class="header__item">
+                        <img src="assets/images/transfer.png" alt="">
+                        <h4>TRANSFER</h4>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="menu__list">
+                <div class="menu__item">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h3 class="menu__text">Accounts</h3>
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <h3 class="menu__text">Transfer</h3>
+                </div>
+                <div class="menu__item">
+                    <i class="fa-solid fa-bars"></i>
+                    <h3 class="menu__text">Menu</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <div class="button__container">
+                <button class="mainButton active" onclick="showActivity()">Activity</button>
+                <button class="mainButton" onclick="showDetails()">Details</button>
+            </div>
+
+            <div id="activity" class="button__active">
+                <h4 class="container">JUL 24, 2024</h4>
+                <div class="deposit__list">
+                    <div class="deposit__item container">
+                        <div class="deposit__text">
+                            <h5>Online Xfer <br> Transfer from CK x5892</h5>
+                        </div>
+
+                        <div class="deposit__price">
+                            <h5>$40,000.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="container">That’s everything! All available activity has been retrieved.</h4>
+            </div>
+
+            <div id="details" class="button__details hidden">
+                <div class="details__list">
+                    <div class="details__item">
+                        <div class="details__name">Account name</div>
+                        <div class="details__info">PROMO 6 MO STMT CD</div>
+                    </div>
+                    <div class="details__item">
+                        <div class="details__name">Account number</div>
+                        <div class="details__info">x5892<span style="color: #027202;">Show</span></div></div>
+                    <div class="details__item">
+                        <div class="details__name">Routing number</div>
+                        <div class="details__info">0260-13673</div>
+                    </div>
+                </div>
+                <div class="details__list">
+                    <div class="details__item">
+                        <div class="details__name">Fedwire ABA for Wires</div>
+                        <div class="details__info">031101266</div>
+                    </div>
+                    <div class="details__item">
+                        <div class="details__name">SWIFT</div>
+                        <div class="details__info">NRTHUS33XXX</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/d80653dcba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
